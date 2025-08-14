@@ -1,84 +1,40 @@
-# DemoBBGuidesBot - chat bot
-It is repository for chat bot: [@DemoBBGuidesBot](https://t.me/DemoBBGuidesBot)
+# Bot-Business-Guide-Telegram-Bot
 
-## What it is?
-This repository can be imported to [Bots.Business](https://bots.business) as a worked chat bot.
+**Bot Business Guide Telegram Bot** is designed to help users learn the **bot business** in an easy, structured, and enjoyable way. Whether you’re a beginner exploring how bots work or an admin managing your own platform, this bot provides the tools you need to learn, practice, and grow.  
 
-[Bots.Business](https://bots.business) - it is probably the first CBPaaS - Chat Bot Platform as a Service.
+---
 
-A CBPaaS is a cloud-based platform that enables developers to create chatbots without needing to build backend infrastructure.
+## Features  
 
-## Create your own bot for Telegram from this Git repo
+- **Step-by-step learning system** – Learn bot development and business strategies in bite-sized, easy-to-understand steps.  
+- **User-friendly interface** – Simple commands, intuitive navigation, and clear instructions for all users.  
+- **Admin control panel** – Manage content, lessons, and user data without touching the bot’s source code.    
+- **Interactive lessons** – Engaging and practical tasks that make learning more fun.  
+- **Achievement system** – Track your progress and earn badges as you master new skills.
+  
+- ### Easy Multi-language Integration
+- Admins can very easily integrate new language in the bot.
+- Spreadsheets will be automatically translated into languages added to the bot using Ai Model.
+- Users can easily change their languages.
+- Changing language will changes ("everything") expect ("proper nouns") and ("special names").
 
-How to create bot?
-1. Create bot with [@BotFather](https://telegram.me/BotFather) and take Secret Token
-2. Create bot in App and add Secret Token
-3. Add Public Key from App as [Deploy key](https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys) with read access (and write access for bot exporting if you need it)
-4. Do import for this git repo
+---
 
-Now you can talk with yours new Telegram Bot
+##  How It Works  
 
-See [more](https://help.bots.business/getting-started)
+1. **Start the bot** by searching for it on Telegram.  
+2. **Choose a topic** you want to learn about bot business.  
+3. **Follow lessons** step-by-step, completing tasks and answering quizzes.  
+4. **Earn achievements** for completing modules.  
+5. **Admins** can add or edit lessons using a simple content management flow with minimal coding in the app.
 
-## Commands - in commands folder
-File name - it is command name (Bot it can be rewritten in command description)
+---
 
-Command can have: `name`, `help`, `aliases` (second names), `answer`, `keyboard`, `scnarios` (for simple logic) and other options.
+## Technology Stack  
 
-### Command description
-It is file header:
+- **Platform:** Telegram  
+- **Backend:** Bots.Business (Telegram Bot Making Platform)  
+- **Data Handling:** Google Sheets & JSON-based storing for database
+- **Content Management:** Admin-only commands with HTML/Markdown formatting  
 
-    /*CMD
-      command: /test
-      help: this is help for ccommand
-      need_reply: [ true or false here ]
-      auto_retry_time: [ time in sec ]
-      answer: it is example answer for /test command
-      keyboard: button1, button2
-      aliases: /test2, /test3
-    CMD*/
-
-See [more](https://help.bots.business/commands)
-
-### Command body
-It is command code in JavaScript.
-Use Bot Java Script for logic in command.
-
-For example:
-> Bot.sendMessage(2+2);
-
-See [more](https://help.bots.business/scenarios-and-bjs)
-
-
-## Libraries - in libs folder
-You can store common code in the libs folder. File name - it is library name.
-
-For example code in myLib.js:
-
-    function hello(){ Bot.sendMessage("Hello from lib!") }
-    function goodbye(name){ Bot.sendMessage("Goodbye, " + name) }
-
-    publish({
-      sayHello: hello,
-      sayGoodbyeTo: goodbye
-    })
-
-then you can run in any bot's command:
-
-    Libs.myLib.hello()
-    Libs.myLib.sayGoodbyeTo("Alice")
-
-See [more](https://help.bots.business/git/library)
-
-## Other bots example
-See other bots examples in the [github](https://github.com/bots-business?utf8=✓&tab=repositories&q=&type=public&language=javascript) or in the [Bot Store](https://bots.business/)
-
-
-## Other help
-[Help.bots.business](https://help.bots.business)
-
-## API
-See [API](https://api.bots.business/docs#/docs/summary)
-
-
-![](https://bots.business/images/web-logo.png)
+---
