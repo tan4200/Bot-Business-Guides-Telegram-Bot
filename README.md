@@ -1,6 +1,7 @@
 # Bot-Business-Guide-Telegram-Bot
 
 **Bot Business Guide Telegram Bot** is designed to help users learn the **bot business** in an easy, structured, and enjoyable way. Whether you’re a beginner exploring how bots work or an admin managing your own platform, this bot provides the tools you need to learn, practice, and grow.  
+SpreadSheet : https://docs.google.com/spreadsheets/d/1k2QrSnvjj3oHKYp0opObo4XNMRSL5Jg3GO3QrN1bHBE/edit
 
 ---
 
@@ -38,3 +39,5 @@
 - **Content Management:** Admin-only commands with HTML/Markdown formatting  
 
 ---
+
+
