@@ -4,14 +4,8 @@
   need_reply: true
   auto_retry_time: 
   folder: ADMIN PANEL
-
-  <<ANSWER
-
-  ANSWER
-
-  <<KEYBOARD
-
-  KEYBOARD
+  answer: 
+  keyboard: 
   aliases: 
   group: 
 CMD*/

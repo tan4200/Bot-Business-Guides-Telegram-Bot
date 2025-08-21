@@ -4,14 +4,8 @@
   need_reply: false
   auto_retry_time: 1
   folder: SPREADSHEETS
-
-  <<ANSWER
-
-  ANSWER
-
-  <<KEYBOARD
-
-  KEYBOARD
+  answer: 
+  keyboard: 
   aliases: 
   group: 
 CMD*/
@@ -44,6 +38,3 @@ let systemLangResultRoot = resultRoot[systemLang]
 sheetDetails.lesson_sheet_size = systemLangResultRoot.lessons.length
 sheetDetails.quiz_sheet_size = systemLangResultRoot.quizzes.length
 Bot.setProperty("sheetDetails",sheetDetails,"json")
-
-
-

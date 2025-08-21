@@ -4,14 +4,8 @@
   need_reply: false
   auto_retry_time: 
   folder: LESSON
-
-  <<ANSWER
-
-  ANSWER
-
-  <<KEYBOARD
-
-  KEYBOARD
+  answer: 
+  keyboard: 
   aliases: 
   group: 
 CMD*/

@@ -37,7 +37,7 @@ let leaderboardTextHeader = {
 let leaderboardBody = "";
 
 quizLeaderboard.forEach((entry, index) => {
-  const tgLink = `<a href="tg://user?id=${entry.user_tg_id}">Ranker</a>`;
+  const tgLink = `<a href="tg://openmessage?user_id=${entry.user_tg_id}">Ranker</a>`;
   const positionEmoji = ["🥇", "🥈", "🥉"][index] || `${index + 1}.`;
 
   const line = {

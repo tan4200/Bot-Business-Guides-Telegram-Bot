@@ -4,14 +4,8 @@
   need_reply: false
   auto_retry_time: 
   folder: others
-
-  <<ANSWER
-
-  ANSWER
-
-  <<KEYBOARD
-
-  KEYBOARD
+  answer: 
+  keyboard: 
   aliases: 
   group: 
 CMD*/
@@ -24,4 +18,3 @@ let option_1 = {
 }
 let method = "sendMessage"
 Api[method](option_1[systemLang])
-

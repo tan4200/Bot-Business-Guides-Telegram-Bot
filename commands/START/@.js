@@ -17,6 +17,7 @@
 CMD*/
 
 // user points
+if(!user) return //because a lots of user property 
 let userPoints = User.getProperty("points",0) 
 user.points = userPoints
 
@@ -42,10 +43,10 @@ user.userStats = userStats
 
 //lang support 
 const languageSupportAvailable = ["en","ru"]
-let systemLang = Bot.getProperty("system_lang", false)
+let systemLang = User.getProperty("system_lang", false)
 if (!systemLang) {
   systemLang = "en"
-  Bot.setProperty("system_lang", systemLang)
+  User.setProperty("system_lang", systemLang)
 }
 
 // admin

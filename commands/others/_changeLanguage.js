@@ -71,7 +71,7 @@ if (!newLang) {
 }
 
 systemLang = newLang;
-Bot.setProperty("system_lang", newLang);
+User.setProperty("system_lang", newLang);
 
 const confirmation = option_2(newLang);
 Api[method](confirmation[systemLang]);
